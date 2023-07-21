@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <link rel="stylesheet" href="css/script.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <a href="index.html"><img class="logo" src="img/logo.svg" alt="" /></a>
+            <div class="menu-wrapper">
+                <ul class="menu">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Mechanism</a></li>
+                    <li><a href="index.html">Latest Update</a></li>
+                </ul>
+                <a href="" class="btn-register">Register</a>
+            </div>
+        </div>
+    </nav>
+    <div class="background-registrasi">
+        <img src="img/Background Registrasi.png" alt="">
+        <h1>Registrasi</h1>
+    </div>
+    <div class="registrasi-form-wrapper">
+        <div class="form">
+            <div class="container">
+                <input type="text" name="nama" class="nama" placeholder="Nama Perusahaan*">
+                <input type="text" name="email" class="email" placeholder="Email*">
+                <input type="text" name="no telp" class="no-telp" placeholder="Nomor Telepon*">
+                <p class="note">Isi hanya angka</p>
+                <input type="text" name="tentang" class="tentang" placeholder="Tentang Perusahaan (Max. 200 character)*">
+                <div class="input-foto">
+                    <div class="foto" onclick="openFileInput()" style="cursor: pointer;">
+                        <input class="foto-btn" type="button" value="+" onclick="openFileInput()" style="cursor: pointer;">
+                        <p class="foto-desc">Upload file logo*</p>
+                    </div>
+                    <div class="format-foto">
+                        <p>1. Format file: .png, .jpg, .jpeg</p>
+                        <p>2. Maksimal ukuran file 200KB</p>
+                        <p>3. Hindari penggunaan logo berwarna putih</p>
+                        <p>4. Minimal lebar 300px</p>
+                    </div>
+                </div>
+                <div class="profil" style="display: flex; align-items: center; justify-content: space-between;">
+                    <label for="file">Profil Perusahaan atau Deck (opsional)</label>
+                    <div class="upload-file" style="cursor: pointer;" onclick="openFileInput()">
+                        <label for="fileInput" style="cursor: pointer;">Upload File</label>
+                        <input type="file" id="fileInput" style="display: none;">
+                    </div>
+                </div>
+                <p class="note">Format file .pdf , maksimal size 20mb</p>
+                <!-- <input type="text" name="profil" class="profil" placeholder="Profil Perusahaan atau Deck (opsional)">
+                <button class="upload-file">Upload File</button> -->
+                <input type="text" name="link" class="link" placeholder="Link website*">
+                <p class="note">Website, Sosial Media, dll. Sertakan protokol URL (https:// atau http://).</p>
+                <div class="verification">
+                    <button class="verif-btn"></button>
+                    <p class="verif-desc">Dengan menekan tombol "Daftar", Saya menyetujui syarat dan ketentuan yang berlaku
+                    </p>
+                </div>
+                <button class="register-btn">Register</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section">
+        <div class="footer-detail">
+          <img class="footer-logo" src="img/logo.svg" alt="">
+          <div class="footer-desc-detail">
+            <p class="footer-desc">
+              Detikfinance memberikan ruang kepada para startup di Indonesia untuk menunjukkan, serta 
+              mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital atau angel investor
+            </p>
+            <div class="detik-socmed">
+              <img src="img/icons/twitter-white.png" alt="twitter">
+              <img src="img/icons/instagram-white.png" alt="instagram">
+              <img src="img/icons/facebook-white.png" alt="facebook">
+            </div>
+          </div>
+          <hr></hr>
+          <p class="copyright">© 2023 Detikcom. All rights reserved</p>
+        </div>
+      </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
